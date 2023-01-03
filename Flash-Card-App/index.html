@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Flashcard App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="add-flashcard-con">
+            <button id = "add-flashcard">Add Flashcard</button>
+        </div>
+    </div>
+
+    <!-- Input form for users to fill question and answer -->
+    <div class="question-container hide" id="add-question-card">
+        <h2>Add Flashcard</h2>
+        <div class="wrapper">
+            <!-- Error message -->
+            <div class="error-con">
+                <span class="hide" id="error">Input fields cannot be empty!</span>
+            </div>
+            <!-- Close Button -->
+            <i class="fa-solid fa-xmark" id="close-btn"></i>
+        </div>
+        <label for="question">Question:</label>
+        <textarea class="input" id="question" placeholder="Type the question here..." rows="2"></textarea>
+        <label for="answer">Answer:</label>
+        <textarea class="input" id="answer" placeholder="Type the answer here..." rows="4"></textarea>
+        <button id="save-btn">Save</button>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
